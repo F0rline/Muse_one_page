@@ -133,7 +133,7 @@
         </main>
 
         <!-- Partie discographie -->
-        <main id="discographie">
+        <main id="discographie" class="discographie">
             <h1>DISCOGRAPHIE</h1>
 
             <!-- Sous-partie Album -->
@@ -401,15 +401,65 @@
                 <div class="col">
                     <p>Mention légales</p>
                 </div>
+                
+                
                 <div class="col">
                     <p>Conditions générales d'utilisation</p>
                 </div>
+                <!-- Bouton pour ouvrir le Pop-Up "Accessibilité" -->
                 <div class="col">
-                    <p>Accessibilité</p>
+                    <a href="#popup" class="open-popup">
+                        <p>Accessibilité</p>
+                    </a>
                 </div>
             </div>
-        </footer>  
+        </footer>
+        
+        <!-- Pop-Up -->
+        <div id="popup">
+            <div class="popup-content">
+              <div class="popup-header">
+                <h1>ACCESSIBILITÉ</h1>
+                <span class="close">&times;</span>
+              </div>
+              <div class="popup-body">
+                <div class="scroll">
+                    <div  class="pop-up-grid">
+                        <p>Le site internet respect un maximum les recommandations de la WAI (Web Accessibility Initiative) qui déterminent comment rendre les sites techniquement accessibles et faciliter ainsi la navigation sur le site.</p>
+
+                        <h3 class="black text-center">CONFORMITE AUX NORMES</h3>
+                        
+                        <p>Le site internet a été conçu, lors de sa création, pour respecter les standards en vigueur concernant le HTML, les feuilles de style, le javascript. Nous apportons depuis un soin constant pour maintenir ce site à un haut niveau de qualité. Néanmoins, étant donné le coté profondément dynamique et vivant de ce site, il est possible que certains éléments puissent par inadvertance se trouver ponctuellement endommagés ou dégradés.</p>
+
+                        <p>Un site accessible respecte en fait quelques critères et règles techniques. En terme de développement le fond (le texte) doit être séparé de la forme (les images, la mise en forme). Chaque élément doit disposer d'une alternative textuelle. Ainsi une image doit avoir une alternative qui sera utilisé par exemple par un logiciel de synthèse vocale.</p>
+
+                        <p>L'accessibilité numérique ne concerne pas seulement les personnes ayant un handicap visuel. L'accessibilité a pour objectif de rendre les sites web plus clairs, plus facile à consulter.</p>
+
+                        <p>Le W3C, l'organisme qui met au point les normes et protocoles du web, a créé la WAI (Web Accessibility Initiative) dans le but d'améliorer l'accessibilité. La WAI définit 3 niveaux de priorité correspondant à 3 niveaux d'accessibilité : A / AA / AAA. Les deux premiers ont servi de base dès 2002 à la résolution du 13 juin, adopté par le Parlement Européen (référence PE (2002)0325). Cette résolution reconnaît l'importance de l'accessibilité du web dans les institutions européennes et les États membres.</p>
+
+                        <a href="http://www.w3.org/WAI/WCAG1AA-Conformance">http://www.w3.org/WAI/WCAG1AA-Conformance</a>
+
+                        <h3 class="text-center black">AIDE À LA NAVIGATION</h3>
+
+                        <li>liens d'accès rapide : placés en haut de page et pied de page, ces liens permettent d'accéder directement au contenu de la page.</li>
+
+                        <li>navigation par tabulation : pour naviguer d'un lien à l'autre à l'aide de la touche de tabulation (appuyez sur la touche "tab" et répétez jusqu'à sélectionner le lien désiré, validez par "entrée").</li>
+
+                        <li>fil d'ariane : vous indique le chemin de navigation que vous avez emprunté en situant la page affichée à l'écran et vous permet de remonter dans l'arborescence.</li>
+
+                        <h3 class="text-center black">PROFITER DE L'ACCESSIBILITÉ NUMÉRIQUE</h3>
+
+                        <p>Un site respectant les normes d'accessibilité vous permet de nombreux ajustements. Vous pouvez par exemple zoomer dans une page sans pour autant perdre en confort de lecture. Utilisez pour cela les options de votre navigateur ou la molette de votre souris en pressant, en même temps, la touche CTRL de votre clavier.</p>
+
+                        <p>La mise en forme du site est indépendante de son contenu grâce à l'utilisation des feuilles de style, aussi chaque élément visuel dispose d'une alternative textuelle, ce qui permet aux navigateurs en mode texte (logiciel de synthèse vocale) d’accéder uniquement aux contenus éditoriaux et de faciliter la navigation</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    <!-- Script JS (Bootstrap) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- Script JS (Perso) -->
     <script src="/assets/script.js"></script>
 </body>
 </html>

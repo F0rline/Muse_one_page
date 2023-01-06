@@ -1,3 +1,4 @@
+// Script du Bouton "Voir plus" pour la partie "Biographie"
 const btnBox = document.getElementById('box');
 const btnLessBox = document.getElementById('box-less');
 const bioBox = document.getElementById('biobox');
@@ -21,11 +22,7 @@ btnLessBox.addEventListener('click' , () => {
 
 })
 
-
-
-
-
-
+// Script du Bouton "Voir plus" pour la partie "Discographie"
 const btnMoreAlbum = document.getElementById('more-album');
 const btnLessAlbum = document.getElementById('less-album');
 const container = document.getElementById('add-album');
@@ -48,3 +45,18 @@ btnLessAlbum.addEventListener('click' , () => {
   btnLessAlbum.style.display = 'none';
 
 })
+
+
+
+// Script du Pop-Up "Accessibilité" pour la partie "Biographie"
+const openButton = document.querySelector('.open-popup');
+const closeButton = document.querySelector('.close');
+const popup = document.getElementById('popup');
+
+openButton.addEventListener('click', () => {
+  popup.style.visibility = 'visible';
+});
+
+closeButton.addEventListener('click', () => {
+  popup.style.visibility = 'hidden';
+});
