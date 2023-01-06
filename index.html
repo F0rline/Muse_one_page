@@ -13,7 +13,7 @@
     <!-- Header -->
     <header>
         <!-- Ancres -->
-        <nav class="navbar-static-top navbar navbar-default">
+        <nav class="navbar fixed-top">
             <div class="container">
                 <a class="text-header" href="#biographie">BIOGRAPHIE</a>
                 <a class="text-header" href="#discographie">DISCOGRAPHIE</a>
@@ -22,249 +22,394 @@
             </div>
         </nav>
     </header>
-
     <!-- Partie Home (Image + Logo) -->
-    <main class="Image-logo">
+    <section class="Image-logo">
         <div class="text-center">
             <img class="home-image" src="/assets/img/photo_concert_muse.png" alt="Image photo_concert_muse">
         </div>
-    </main>
-
-    <!-- Partie présentation Muse -->
-    <main class="muse-presentation">
-        <div class="container">
-
+    </section>
+    <div class="grid">
+        <!-- Partie présentation Muse -->
+        <main class="muse-presentation">
             <div class="container">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <img class="text-center img-groupe" src="/assets/img/photo_groupe_muse.png" alt="photo_groupe_muse"> 
+                        </div>
+                        <div class="col">
+                            <div class="description col">
+                                <h2>MUSE</h2>
+                                <p class="text-profile">Groupe de rock indépendant</p>
+                                <p class="text-profile">Anglais</p>
+                                <p class="text-profile last-text">Crée en 1994</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </main>
+        
+        <!-- Line Up -->
+        <main class="line-up">
+            <h3>Line-Up</h3>
+            
+            <div class="container text-center">
                 <div class="row">
                     <div class="col">
-                        <img class="img-groupe" src="/assets/img/photo_groupe_muse.png" alt="photo_groupe_muse"> 
+                        <div class="bloc-lineup">
+                            <h4>Christopher WOLSTENHOLME</h4>
+                            <p>Basse, Chœur, Harmonica</p>
+                        </div>  
                     </div>
                     <div class="col">
-                        <div class="description col">
-                            <h2>MUSE</h2>
-                            <p class="text-profile">Groupe de rock indépendant</p>
-                            <p class="text-profile">Anglais</p>
-                            <p class="text-profile last-text">Crée en 1994</p>
-                            <div class="row left">
-                                <div class="col">
-                                    <p class="text-profile2">Popularité :</p>
+                        <div class="bloc-lineup">
+                            <h4>Dan NEWELL</h4>
+                            <p>Trompette</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="bloc-lineup">
+                            <h4>Mattew BELLAMY</h4>
+                            <p>Chant, Guitare, Claviers</p>
+                        </div>  
+                    </div>
+                    <div class="col">
+                        <div class="bloc-lineup">
+                            <h4>Morgan NICHOLLS</h4>
+                            <p>Chœurs, Clavier, Percussions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="bloc-lineup">
+                            <h4>Dominic HOWARD</h4>
+                            <p>Batterie, Percussion</p>
+                        </div>  
+                    </div>
+                    <div class="col">
+                        <div class="bloc-lineup">
+                            <h4>Alessandro CORTINI</h4>
+                            <p>Claviers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Partie Biographie -->
+        <main id="biographie" class="biographie">
+            <h1>BIOGRAPHIE</h1>
+            <p class="text">
+                Muse est un groupe de rock britannique, originaire de Teignmouth, dans le Devon, en Angleterre. Apparu sur la scène musicale en 1994, le trio est composé de Matthew Bellamy, Christopher Wolstenholme.
+            </p>
+
+            <!-- Bouton "Voir plus" -->
+            <div id="box" class="gap text-center">
+                <a class="btn btn-outline-light btn btn-sm" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="box" aria-label="voir plus">
+                    Voir plus
+                </a>
+            </div>
+
+            <!-- Partie qui s'affiche quand l'on clic sur le bouton "Voir plus" -->
+            <div id="biobox" class="collapse mult-collapse">
+                <p class="text">
+                    Muse a réalisé neuf albums studio depuis ses débuts qui sont Showbiz (1999), Origin of Symmetry (2001), Absolution (2003), Black Holes and Revelations (2006), The Resistance (2009), The 2 Law (2012), album qui prend la première place des classements dans plusieurs pays tels que le Royaume-Uni et la France, Drones (2015), Simulation Theory (2018) et Will of the People (2022). Ils sont également les auteurs de quatre DVD live : Hullabaloo (2002), Absolution Tour (2005), HAARP (2008), et Live at Rome Olympic Stadium (2013).
+                </p>
+                <p class="text">
+                    À l'occasion des Jeux olympiques de Londres de 2012, le groupe est invité à composer l'hymne officiel de l’événement (la chanson Survival); il fait également une apparition lors de la cérémonie de clôture de ces mêmes Jeux. En 2013, le groupe britannique a vendu près de trente millions d'albums dans le monde. Régulièrement récompensés par des prix, ils remportent notamment le Grammy Award dans la catégorie de « Meilleur album rock » en 2011 et en 2016.
+                </p>
+            </div>
+
+            <!-- Bouton "Voir moins" -->
+            <div id="box-less" class="gap text-center">
+                <a class="button-less btn btn-outline-light btn btn-sm" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="box" aria-label="voir plus">
+                    Voir moins
+                </a>
+            </div>
+        </main>
+
+        <!-- Partie discographie -->
+        <main id="discographie">
+            <h1>DISCOGRAPHIE</h1>
+
+            <!-- Sous-partie Album -->
+            <h3>Albums</h3>
+
+            <!-- Partie qui s'affiche de base -->
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col">
+                        <div class="vignette">
+                            <img src="/assets/img/album_showbiz_muse.png" alt="Showbiz_album">
+                            <div class="vignette-space">
+                                <p>Showbiz</p>
+                                <p class="album-year">1999</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="vignette">
+                            <img src="/assets/img/album_origin_of_symmetry_muse.png" alt="Origin_of_Symmetry_album">
+                            <div class="vignette-space">
+                                <p>Origin of Symmetry</p>
+                                <p class="album-year">2001</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="vignette">
+                            <img src="/assets/img/album_absolution_muse.png" alt="Absolution_album">
+                            <div class="vignette-space">
+                                <p>Absolution</p>
+                                <p class="album-year">2003</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bouton "Voir plus" -->
+            <div id="more-album" class="gap text-center">
+                <a class="btn btn-outline-light btn btn-sm" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="box" aria-label="voir plus">
+                    Voir plus
+                </a>
+            </div>
+
+            <!-- Partie qui s'affiche après avoir cliquer sur le bouton "Voir plus" -->
+            <div id="add-album" class="collapse mult-collapse">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col">
+                            <div class="vignette">
+                                <img src="/assets/img/album_black_holes_and_revelation_muse.png" alt="Black_Holes_and_Revelation_album">
+                                <div class="vignette-space">
+                                    <p>Black Holes and Revelations</p>
+                                    <p class="album-year">2006</p>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="vignette">
+                                <img src="/assets/img/album_the_resistance_muse.png" alt="Origin_of_Symmetry_album">
+                                <div class="vignette-space">
+                                    <p>The Resistance</p>
+                                    <p class="album-year">2009</p>
                                 </div>
-                                <div class="col-6">
-                                    <img class="stars" src="/assets/icons/star.png" alt="étoile">
-                                    <img class="stars" src="/assets/icons/star.png" alt="étoile">
-                                    <img class="stars" src="/assets/icons/star.png" alt="étoile">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="vignette">
+                                <img src="/assets/img/album_the_2nd_law_muse.png" alt="Absolution_album">
+                                <div class="vignette-space">
+                                    <p>The 2nd Law</p>
+                                    <p class="album-year">2012</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="vignette">
+                                <img src="/assets/img/album_drones_muse.png" alt="Showbiz_album">
+                                <div class="vignette-space">
+                                    <p>Drones</p>
+                                    <p class="album-year">2015</p>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="vignette">
+                                <img src="/assets/img/album_simulation_theory_muse.png" alt="Origin_of_Symmetry_album">
+                                <div class="vignette-space">
+                                    <p>Simulation Theory</p>
+                                    <p class="album-year">2018</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="vignette">
+                                <img src="/assets/img/album_will_of_the_people_muse.png" alt="Absolution_album">
+                                <div class="vignette-space">
+                                    <p>Will of the People</p>
+                                    <p class="album-year">2022</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-    </main>
-    
-    <main class="line-up">
-        <h3>Line-Up</h3>
-        
-        <div class="container text-center">
-            <div class="row">
-                <div class="col">
-                    <div class="bloc-lineup">
-                        <h4>Christopher WOLSTENHOLME</h4>
-                        <p>Basse, Chœur, Harmonica</p>
-                    </div>  
-                </div>
-                <div class="col">
-                    <div class="bloc-lineup">
-                        <h4>Dan NEWELL</h4>
-                        <p>Trompette</p>
-                    </div>
-                </div>
+            
+            <!-- Bouton "Voir moins" -->
+            <div id="less-album" class="gap text-center">
+                <a class="button-less-album btn-outline-light btn btn-sm" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="box" aria-label="voir moins">
+                    Voir moins
+                </a>
             </div>
-            <div class="row">
-                <div class="col">
-                    <div class="bloc-lineup">
-                        <h4>Mattew BELLAMY</h4>
-                        <p>Chant, Guitare, Claviers</p>
-                    </div>  
-                </div>
-                <div class="col">
-                    <div class="bloc-lineup">
-                        <h4>Morgan NICHOLLS</h4>
-                        <p>Chœurs, Clavier, Percussions</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div class="bloc-lineup">
-                        <h4>Dominic HOWARD</h4>
-                        <p>Batterie, Percussion</p>
-                    </div>  
-                </div>
-                <div class="col">
-                    <div class="bloc-lineup">
-                        <h4>Alessandro CORTINI</h4>
-                        <p>Claviers</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
 
-    <main id="biographie" class="biographie">
-        <h1>BIOGRAPHIE</h1>
-        <p class="text">
-            Muse est un groupe de rock britannique, originaire de Teignmouth, dans le Devon, en Angleterre. Apparu sur la scène musicale en 1994, le trio est composé de Matthew Bellamy, Christopher Wolstenholme.
-        </p>
-        <div id="box" class="gap text-center">
-            <a class="btn btn-outline-light btn btn-sm" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="box" aria-label="voir plus">
-                Voir plus
-            </a>
-        </div>
-        <div id="biobox" class="collapse mult-collapse">
-            <p class="text">
-                Muse a réalisé neuf albums studio depuis ses débuts qui sont Showbiz (1999), Origin of Symmetry (2001), Absolution (2003), Black Holes and Revelations (2006), The Resistance (2009), The 2 Law (2012), album qui prend la première place des classements dans plusieurs pays tels que le Royaume-Uni et la France, Drones (2015), Simulation Theory (2018) et Will of the People (2022). Ils sont également les auteurs de quatre DVD live : Hullabaloo (2002), Absolution Tour (2005), HAARP (2008), et Live at Rome Olympic Stadium (2013).
-            </p>
-            <p class="text">
-                À l'occasion des Jeux olympiques de Londres de 2012, le groupe est invité à composer l'hymne officiel de l’événement (la chanson Survival); il fait également une apparition lors de la cérémonie de clôture de ces mêmes Jeux. En 2013, le groupe britannique a vendu près de trente millions d'albums dans le monde. Régulièrement récompensés par des prix, ils remportent notamment le Grammy Award dans la catégorie de « Meilleur album rock » en 2011 et en 2016.
-            </p>
-        </div>
-        <div class="gap text-center">
-            <button type="button" class="button-less btn btn-outline-light btn btn-sm">
-            Voir moins
-            </button>
-        </div>
-    </main>
+            <!-- Sous-partie live -->
+            <h3>Live</h3>
 
-    <main id="discographie">
-        <h1>DISCOGRAPHIE</h1>
-        <h3>Albums</h3>
-
-        <div class="container text-center">
-            <div class="row">
-                <div class="col">
-                    <div class="vignette">
-                        <img src="/assets/img/album_showbiz_muse.png" alt="Showbiz_album">
-                        <div class="vignette-space">
-                            <p>Showbiz</p>
-                            <p class="album-year">1999</p>
+            <!-- Vignette live -->
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col">
+                        <div class="vignette">
+                            <img src="/assets/img/live_hallubaloo_muse.png" alt="Hallubaloo_live">
+                            <div class="vignette-space">
+                                <p>Hallubaloo</p>
+                                <p>2002</p>
+                            </div>
                         </div>
-                        
                     </div>
-                </div>
-                <div class="col">
-                    <div class="vignette">
-                        <img src="/assets/img/album_origin_of_symmetry_muse.png" alt="Origin_of_Symmetry_album">
-                        <div class="vignette-space">
-                            <p>Origin of Symmetry</p>
-                            <p class="album-year">2001</p>
+                    <div class="col">
+                        <div class="vignette">
+                            <img src="/assets/img/live_H.A.A.R.P._muse.png" alt="H.A.A.R.P._live">
+                            <div class="vignette-space">
+                                <p>H.A.A.R.P. - Live at Wembley</p>
+                                <p>2008</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="vignette">
+                            <img src="/assets/img/live_live_at_rome_muse.png" alt="Live_at_rome_live">
+                            <div class="vignette-space">
+                                <p>Live at Rome Olympic Stadium</p>
+                                <p>2013</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="vignette">
-                        <img src="/assets/img/album_absolution_muse.png" alt="Absolution_album">
-                        <div class="vignette-space">
-                            <p>Absolution</p>
-                            <p class="album-year">2003</p>
-                        </div>
-                        
-                    </div>
-                </div>
             </div>
-        </div>
+        </main>
 
-        <div class="text-center">
-            <div class="gap">
-                <button type="button" class="btn btn-outline-light btn btn-sm">
-                Voir plus
+        <!-- Partie vidéos -->
+        <main id="video" class="video">
+            <h1>VIDÉOS</h1>
+
+            <!-- Carousel vidéo avec Bootstrap -->
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner text-center">
+
+                <!-- Vidéo injecter en interne -->
+                <div class="carousel-item active">
+                    <video src="/assets/video/video1.mp4" controls></video>
+                </div>
+                <div class="carousel-item">
+                    <video src="/assets/video/video2.mp4" controls></video>
+                </div>
+                <div class="carousel-item">
+                    <video src="/assets/video/video3.mp4" controls></video>
+                </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
                 </button>
             </div>
-        </div>
-        <h3>Live</h3>
+        <!-- Partie nos réseaux -->
+        </main>
+        <main id="social-media" class="social-media">
+            <h1>NOS RÉSEAUX</h1>
 
-        <div class="container text-center">
-            <div class="row">
-                <div class="col">
-                    <div class="vignette">
-                        <img src="/assets/img/live_hallubaloo_muse.png" alt="Hallubaloo_live">
-                        <div class="vignette-space">
-                            <p>Hallubaloo</p>
-                            <p class="album-year">2002</p>
+            <!-- Bandeaux d'icone aligner vers la gauche (Pour affichage mobile) -->
+            <div class="left">
+                <div class="container-gap">
+                    <div class="row">
+                        <div class="col-1">
+                            <a href="https://www.muse.mu">
+                                <img class="icons" src="/assets/icons/website.png" alt="website_icons">
+                            </a>
+                        </div>
+                        <div class="col-1">
+                            <a href="https://fr-fr.facebook.com/muse/">
+                                <img class="icons" src="/assets/icons/facebook.png" alt="facebook_icons">
+                            </a>
+                        </div>
+                        <div class="col-1">
+                            <a href="https://twitter.com/muse?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                                <img class="twitter-icons" src="/assets/icons/twitter.png" alt="twitter_icons">
+                            </a>
+                        </div>
+                        <div class="col-1">
+                            <a href="https://www.youtube.com/channel/UCGGhM6XCSJFQ6DTRffnKRIw">
+                                <img class="youtube-icons" src="/assets/icons/youtube.png" alt="youtube_icons">
+                            </a>
+                        </div>
+                        <div class="col-1">
+                            <a href="https://myspace.com/muse">
+                                <img class="my-space-icons" src="/assets/icons/my_space.png" alt="my_space_icons">
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="vignette">
-                        <img src="/assets/img/live_H.A.A.R.P._muse.png" alt="H.A.A.R.P._live">
-                        <div class="vignette-space">
-                            <p>H.A.A.R.P. - Live at Wembley</p>
-                            <p class="album-year">2008</p>
+            </div>
+
+            <!-- Bandeaux d'icone aligner au centre (Pour affichage tablette/desktop) -->
+            <div class="center">
+                <div class="container-gap">
+                    <div class="row">
+                        <div class="col">
+                            <a href="https://www.muse.mu">
+                                <img class="icons" src="/assets/icons/website.png" alt="website_icons">
+                            </a>
                         </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="vignette">
-                        <img src="/assets/img/live_live_at_rome_muse.png" alt="Live_at_rome_live">
-                        <div class="vignette-space">
-                            <p>Live at Rome Olympic Stadium</p>
-                            <p class="album-year">2013</p>
+                        <div class="col">
+                            <a href="https://fr-fr.facebook.com/muse/">
+                                <img class="icons" src="/assets/icons/facebook.png" alt="facebook_icons">
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="https://twitter.com/muse?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                                <img class="twitter-icons" src="/assets/icons/twitter.png" alt="twitter_icons">
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="https://www.youtube.com/channel/UCGGhM6XCSJFQ6DTRffnKRIw">
+                                <img class="youtube-icons" src="/assets/icons/youtube.png" alt="youtube_icons">
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="https://myspace.com/muse">
+                                <img class="my-space-icons" src="/assets/icons/my_space.png" alt="my_space_icons">
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </main>
-
-    <main id="video" class="video">
-        <h1>VIDÉOS</h1>
-    </main>
-    <main id="social-media" class="social-media">
-        <h1>NOS RÉSEAUX</h1>
-        <div class="container-gap">
-            <div class="row">
-                <div class="col-1">
-                    <a href="https://www.muse.mu">
-                        <img class="icons" src="/assets/icons/website.png" alt="website_icons">
-                    </a>
-                </div>
-                <div class="col-1">
-                    <a href="https://fr-fr.facebook.com/muse/">
-                        <img class="icons" src="/assets/icons/facebook.png" alt="facebook_icons">
-                    </a>
-                </div>
-                <div class="col-1">
-                    <a href="https://twitter.com/muse?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
-                        <img class="twitter-icons" src="/assets/icons/twitter.png" alt="twitter_icons">
-                    </a>
-                </div>
-                <div class="col-1">
-                    <a href="https://www.youtube.com/channel/UCGGhM6XCSJFQ6DTRffnKRIw">
-                        <img class="youtube-icons" src="/assets/icons/youtube.png" alt="youtube_icons">
-                    </a>
-                </div>
-                <div class="col-1">
-                    <a href="https://myspace.com/muse">
-                        <img class="my-space-icons" src="/assets/icons/my_space.png" alt="my_space_icons">
-                    </a>
-                </div>
-            </div>
-        </div>
+    
+        <!-- Footer -->
         <footer>
             <div class="row text-center">
                 <div class="col">
                     <p>Mention légales</p>
                 </div>
                 <div class="col">
-                    <p>Condition générales d'utilisations</p>
+                    <p>Conditions générales d'utilisation</p>
                 </div>
                 <div class="col">
                     <p>Accessibilité</p>
                 </div>
             </div>
-        </footer>
-        
-    </main>
-    <script src="/assets/script.js"></script>
+        </footer>  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="/assets/script.js"></script>
 </body>
 </html>
