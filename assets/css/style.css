@@ -12,8 +12,16 @@ body {
     box-shadow: 0px, 3px, 6px white;
 }
 
-header {
-    background-color: black;
+main {
+    padding-top: 60px;
+}
+
+.grid {
+    margin: 0px 30px;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 h1 {
@@ -21,13 +29,13 @@ h1 {
     font-size: 25px;
     font-weight: bold;
     color: white;
-    margin-top: 20px;
     margin-left: 3%;
 }
 
 h2 {
     margin-bottom: 1px;
     font-family: 'IBM Plex Sans', sans-serif;
+    margin-bottom: 60px;
     font-size: 20px;
     font-weight: bold;
     color: white;
@@ -130,8 +138,8 @@ padding: 0px 5px;
 
 .bloc-lineup {
     padding: 5px 10px;
-    margin-top: 2.5px;
-    margin-bottom: 2.5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     border-radius: 7px;
     background-color: white;
 }
@@ -167,6 +175,10 @@ padding: 0px 5px;
     margin-top: 10px
 }
 
+.vignette .album-year {
+    margin-bottom: 20px;
+}
+
 .gap {
     margin: 20px 0px;
 }
@@ -175,12 +187,22 @@ padding: 0px 5px;
     display: none;
 }
 
-.button-less {
-    display: none;
-}
 
 .container-gap {
     margin-left: 3%;
+}
+
+#add-album {
+    display: none;
+}
+
+video {
+    height: auto;
+    width: 300px;
+}
+
+.center {
+    display: none;
 }
 
 .icons {
@@ -212,6 +234,10 @@ footer {
   
 
 @media screen and (min-width: 500px) and (max-width: 750px) {
+
+    .grid {
+        margin: 0px 30px;
+    }
 
     header a {
         font-family: 'IBM Plex Sans', sans-serif;
@@ -248,10 +274,12 @@ footer {
     h1 {
         font-size: 35px;
         text-align: center;
+        margin-top: 50px;
     }
 
     h3 {
         font-size: 20px;
+        margin-top: 20px;
         margin-left: 50px;
     }
 
@@ -268,6 +296,14 @@ footer {
         margin: 12px 50px;
     }
 
+    .btn {
+        font-size: 15px;
+    }
+
+    .button-less {
+        font-size: 15px;
+    }
+
     .vignette img {
         width: 120px;
         height: auto;
@@ -275,6 +311,20 @@ footer {
 
     .vignette p {
         font-size: 15px;
+    }
+
+    video {
+        height: auto;
+        width: 450px;
+    }
+
+    .left {
+        display: none;
+    }
+
+    .center {
+        display: block;
+        margin: 30px 50px;
     }
 
     .icons {
@@ -305,6 +355,10 @@ footer {
 }
 
 @media screen and (min-width: 751px) and (max-width: 900px) {
+
+    .grid {
+        margin: 0px 50px;
+    }
 
     header a {
         font-size: 18px;
@@ -341,6 +395,7 @@ footer {
 
     h3 {
         font-size: 20px;
+        margin-top: 20px;
         margin-left: 50px;
     }
 
@@ -357,6 +412,14 @@ footer {
         margin: 12px 50px;
     }
 
+    .btn {
+        font-size: 20px;
+    }
+
+    .button-less {
+        font-size: 20px;
+    }
+
     .vignette img {
         width: 120px;
         height: auto;
@@ -364,6 +427,20 @@ footer {
 
     .vignette p {
         font-size: 15px;
+    }
+
+    video {
+        height: auto;
+        width: 700px;
+    }
+
+    .left {
+        display: none;
+    }
+
+    .center {
+        display: block;
+        margin: 30px 50px;
     }
 
     .icons {
@@ -395,6 +472,11 @@ footer {
 
 @media screen and (min-width: 901px) and (max-width: 1200px) {
 
+
+    .grid {
+        margin: 0px 100px;
+    }
+
     header a {
         font-size: 30px;
     }
@@ -424,12 +506,14 @@ footer {
     }
 
     h1 {
-        font-size: 35px;
+        font-size: 45px;
         text-align: center;
+        margin-top: 90px;
     }
 
     h3 {
         font-size: 30px;
+        margin-top: 20px;
         margin-left: 50px;
     }
 
@@ -437,22 +521,44 @@ footer {
         font-size: 18px;
     }
 
+    .text {
+        font-size: 18px;
+        margin: 12px 50px;
+    }
+
     .bloc-lineup p {
         font-size: 18px;
     }
 
-    .text {
-        font-size: 13px;
-        margin: 12px 50px;
+    .btn {
+        font-size: 25px;
+    }
+
+    .button-less {
+        font-size: 25px;
     }
 
     .vignette img {
-        width: 120px;
+        width: 200px;
         height: auto;
     }
 
     .vignette p {
-        font-size: 15px;
+        font-size: 25px;
+    }
+
+    video {
+        height: auto;
+        width: 900px;
+    }
+
+    .left {
+        display: none;
+    }
+
+    .center {
+        display: block;
+        margin: 30px 50px;
     }
 
     .icons {
@@ -477,6 +583,126 @@ footer {
     }
 
     footer p {
-        font-size: 20px;
+        font-size: 23px;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+
+    main {
+        padding-top: 100px;
+    }
+
+    .grid {
+        margin: 0px 150px;
+    }
+
+    header a {
+        font-size: 30px;
+    }
+
+    .img-groupe {
+        width: 250px;
+        height: auto;
+        border: 10px white solid;
+    }
+
+    h1 {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    h2 {
+     font-size: 40px;
+    }
+
+    h3 {
+        font-size: 30px;
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    .text-profile {
+        font-size: 25px;
+    }
+
+    .text-profile2 {
+        font-size: 30px;
+        padding : 0px 0px
+    }
+
+    .stars {
+        width: 38px;
+        height: auto;
+    }
+
+
+    .text {
+        font-size: 18px;
+        margin: 12px 50px;
+    }
+
+    .bloc-lineup p {
+        font-size: 18px;
+    }
+
+    .btn {
+        font-size: 23px;
+    }
+
+    .button-less {
+        font-size: 23px;
+    }
+
+    .vignette img {
+        width: 200px;
+        height: auto;
+    }
+
+    .vignette p {
+        font-size: 25px;
+    }
+
+    video {
+        height: auto;
+        width: 1200px;
+    }
+
+    .left {
+        display: none;
+    }
+
+    .center {
+        display: block;
+        margin: 30px 50px;
+    }
+
+    .icons {
+        width: 35px;
+        height: auto;
+    }
+
+    .youtube-icons {
+        width: auto;
+        height: 33px;
+    }
+
+    .twitter-icons {
+        width: auto;
+        height: 33px;
+    }
+    
+    .my-space-icons {
+        width: auto;
+        height: 30px;
+        margin-left: 10px;
+    }
+
+    footer p {
+        font-size: 23px;
     }
 }
